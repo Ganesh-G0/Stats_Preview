@@ -1,102 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Stats Preview</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            screens: {
-              mobile: "375px",
-              desktop: "1440px",
-            },
-            colors: {
-              veryDarkBlue: "hsl(233, 47%, 7%)",
-              darkSaturatedBlue: "hsl(244, 38%, 16%)",
-              softViolet: "hsl(277, 64%, 61%)",
-              white: "hsl(0, 0%, 100%)",
-              whiteP: "hsla(0, 0%, 100%, 0.75)",
-              whiteS: "hsla(0, 0%, 100%, 0.6)",
-
-              attribution: "hsl(228, 45%, 44%)",
-            },
-            fontFamily: {
-              primary: ["Lexend Deca", "sans-serif"],
-              secondary: ["Inter", "sans-serif"],
-            },
-            fontSize: {
-              body: "15px",
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="bg-veryDarkBlue text-white font-primary flex flex-col h-[100dvh] justify-center items-center">
-    <main class="container bg-darkSaturatedBlue text-center rounded-[.6rem]
-    flex flex-col justify-center items-center w-5/6 max-w-[36rem]
-    md:grid md:grid-cols-2 md:max-w-[76rem] md:min-h-fit"> 
-      <div class="hero-img bg-softViolet opacity-[.8]  
-      md:h-full md:col-start-2 md:row-start-1">
-        <img
-          class="img-fluid md:hidden bg-softViolet opacity-50"
-          src="./images/mobile.jpg"
-          alt="Hero Img"
-        />
-        <img
-          class="hidden bg-softViolet opacity-50 
-          md:block md:h-full md:w-full"
-          src="./images/desktop.jpg"
-          alt="Hero Img"
-        />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <title>Stats Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="img-div bg">
+      <img class="mobile-hero" src="./images/mobile.jpg" alt="hero">
+      <img class="desktop-hero" src="./images/desktop.jpg" alt="hero">
+    </div>
+    <div class="text-div">
+      <h1>Get <span>insights</span> that help your business grow.</h1>    
+      <p>
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>   
+    </div>
+    <div class="stats-div">
+      <div>
+        <p>10k+</p>
+        <p>companies</p>
+      </div>      
+      <div>
+        <p>314</p>
+        <p>templates</p>
       </div>
-      <div class="md:text-left md:p-5 md:m-5 md:col-start-1 flex flex-col justify-evenly">
-        <h1 class="text-4xl font-bold px-5 m-5 ">
-          Get
-          <span class="text-softViolet">insights</span>
-          that help your business grow.
-        </h1>
-        <p class="text-whiteP text-md mx-3 px-5 md:text-lg md:mx-5 md:px-5">
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
-        </p>
-        <div class="flex flex-col justify-center align-center py-5 text-center
-        md:grid md:grid-cols-3">
-          <div class="py-4">
-            <h1>10k+</h1>
-            <h2>companies</h2>
-          </div>
-          <div class="py-4">
-            <h1>314</h1>
-            <h2>templates</h2>
-          </div>
-          <div class="py-4">
-            <h1>12M+</h1>
-            <h2>Queries</h2>
-          </div>
-        </div>
+      <div>
+        <p>12m+</p>
+        <p>queries</p>
       </div>
-    </main>
-    <footer class="attribution p-5 md:text-3xl">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >
-      <br>
-      Coded by
-      <a href="https://www.frontendmentor.io/profile/Ganesh-G0" target="_blank"
-        >Ganesh</a
-      >
-    </footer>
-  </body>
+    </div>
+  </main>
+</body>
 </html>
